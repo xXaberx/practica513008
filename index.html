@@ -10,8 +10,8 @@
     <!--tabla simple-->
     <table border="1">
         <tr>
-            <td>ID</td>
-            <td>Carrera</td>
+            <th>ID</th>
+            <th>Carrera</th>
         </tr>
         <tr>
             <td>1</td>
@@ -26,5 +26,42 @@
             <td>LA</td>
         </tr>
     </table>
+    <hr>
+    <!-- Tabla con celdas combinadas -->
+    <table>
+        <thead>
+            <tr>Mi horario</tr>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00 a 8:00 am</td>
+                <td rowpan="2">Natacion</td>
+                <td>Progra</td>
+                <td colspan="3">-</td>
+            </tr>
+            <tr>
+                <td>8:00 a 9:00 am</td>
+                <td rowspan="2">Natatdon</th>
+                <td>Progra</td>
+                <td colspan="3">web</td>
+                <!-- Colspan se usa para combinar-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6"> fecha elaboracion 30-agosto-2023</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 </html>
